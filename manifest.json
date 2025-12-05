@@ -1,0 +1,21 @@
+{
+  "name": "Google Cloud Ops - Catálogo de Servicios",
+  "short_name": "GC Ops",
+  "description": "Catálogo de servicios Google Cloud Platform con gestión de tickets",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#1e293b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/images/google-cloud-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "es-ES",
+  "dir": "ltr"
+}

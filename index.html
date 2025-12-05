@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de Servicios Google Cloud - Gestión de infraestructura y soporte">
+    <meta name="author" content="Google Cloud Ops">
+    <meta name="theme-color" content="#1e293b">
+    <title>Portafolio de Servicios - Google Cloud Ops</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/google-cloud-logo.svg">
+
+    <!-- Estilos externos -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Manifest PWA -->
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<!-- OVERLAY PARA MENÚ MÓVIL -->
+<div class="overlay" id="overlay"></div>
+
+<!-- SIDEBAR - MENÚ DE NAVEGACIÓN -->
+<aside class="sidebar" id="sidebar">
+    <!-- HEADER CON LOGO -->
+    <div class="sidebar-header">
+        <img src="assets/images/google-cloud-logo.svg" alt="Google Cloud Logo" class="logo">
+        <h2>Google Cloud Ops</h2>
+        <button class="close-menu" id="closeMenu" aria-label="Cerrar menú">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+
+    <!-- BÚSQUEDA -->
+    <div class="search-container">
+        <input type="text"
+               id="searchInput"
+               class="search-input"
+               placeholder="Buscar servicios..."
+               aria-label="Buscar servicios">
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+        </svg>
+    </div>
+
+    <h3>Servicios</h3>
+    <nav aria-label="Servicios de Google Cloud">
+        <div class="menu-item" data-service="compute" data-category="servicios" role="button" tabindex="0">
+            <img src="assets/icons/compute.svg" alt="" class="menu-icon" aria-hidden="true">
+            <span>Compute Engine</span>
+            <button class="favorite-btn" data-service="compute" aria-label="Agregar a favoritos" title="Agregar a favoritos">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+            </button>
+        </div>
+        <div class="menu-item" data-service="kubernetes" data-category="servicios" role="button" tabindex="0">
+            <img src="assets/icons/kubernetes.svg" alt="" class="menu-icon" aria-hidden="true">
+            <span>Kubernetes Engine</span>
+            <button class="favorite-btn" data-service="kubernetes" aria-label="Agregar a favoritos" title="Agregar a favoritos">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+            </button>
+        </div>
+        <div class="menu-item" data-service="sql" data-category="servicios" role="button" tabindex="0">
+            <img src="assets/icons/database.svg" alt="" class="menu-icon" aria-hidden="true">
+            <span>Cloud SQL</span>
+            <button class="favorite-btn" data-service="sql" aria-label="Agregar a favoritos" title="Agregar a favoritos">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+            </button>
+        </div>
+        <div class="menu-item" data-service="storage" data-category="servicios" role="button" tabindex="0">
+            <img src="assets/icons/storage.svg" alt="" class="menu-icon" aria-hidden="true">
+            <span>Cloud Storage</span>
+            <button class="favorite-btn" data-service="storage" aria-label="Agregar a favoritos" title="Agregar a favoritos">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+            </button>
+        </div>
+        <div class="menu-item" data-service="iam" data-category="servicios" role="button" tabindex="0">
+            <svg class="menu-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="8.5" cy="7" r="4"></circle>
+                <polyline points="17 11 19 13 23 9"></polyline>
+            </svg>
+            <span>IAM – Identity & Access</span>
+            <button class="favorite-btn" data-service="iam" aria-label="Agregar a favoritos" title="Agregar a favoritos">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <h3>Soporte</h3>
+    <nav aria-label="Soporte y tickets">
+        <div class="menu-item" data-service="ticket" data-category="soporte" role="button" tabindex="0">
+            <svg class="menu-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="12" y1="18" x2="12" y2="12"></line>
+                <line x1="9" y1="15" x2="15" y2="15"></line>
+            </svg>
+            <span>Crear Incidente</span>
+        </div>
+        <div class="menu-item" data-service="mis" data-category="soporte" role="button" tabindex="0">
+            <svg class="menu-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span>Mis Incidentes</span>
+        </div>
+        <div class="menu-item" data-service="p1" data-category="soporte" role="button" tabindex="0">
+            <svg class="menu-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            <span>Incidente P1</span>
+        </div>
+        <div class="menu-item" data-service="status" data-category="soporte" role="button" tabindex="0">
+            <svg class="menu-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg>
+            <span>Status Dashboard</span>
+        </div>
+    </nav>
+
+    <!-- FAVORITOS -->
+    <div id="favoritesSection" class="favorites-section" style="display: none;">
+        <h3>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            Favoritos
+        </h3>
+        <nav id="favoritesContainer" aria-label="Servicios favoritos"></nav>
+    </div>
+</aside>
+
+<!-- CONTENIDO PRINCIPAL -->
+<main class="content" id="content">
+    <!-- HEADER CON MENÚ HAMBURGUESA Y BREADCRUMBS -->
+    <header class="main-header">
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú de navegación">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="breadcrumbs" id="breadcrumbs" aria-label="Breadcrumb">
+            <a href="#" class="breadcrumb-item" data-service="home">Inicio</a>
+        </nav>
+    </header>
+
+    <!-- LOADING SPINNER -->
+    <div class="loading-spinner" id="loadingSpinner" style="display: none;">
+        <div class="spinner"></div>
+        <p>Cargando...</p>
+    </div>
+
+    <!-- CONTENIDO DINÁMICO -->
+    <div id="dynamicContent">
+        <div class="card welcome-card">
+            <div class="welcome-header">
+                <h2>Bienvenido al Portafolio de Servicios</h2>
+                <div class="welcome-badge">v1.0.0</div>
+            </div>
+            <p>Seleccione un servicio o módulo de soporte desde el menú lateral.</p>
+            <p>Este catálogo le permite gestionar y monitorear todos los servicios de Google Cloud Platform.</p>
+
+            <!-- MÉTRICAS RÁPIDAS -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <div class="metric-info">
+                        <div class="metric-value">99.9%</div>
+                        <div class="metric-label">Uptime</div>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                    <div class="metric-info">
+                        <div class="metric-value">5</div>
+                        <div class="metric-label">Servicios Activos</div>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                    </svg>
+                    <div class="metric-info">
+                        <div class="metric-value" id="ticketCount">0</div>
+                        <div class="metric-label">Tickets Abiertos</div>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <div class="metric-info">
+                        <div class="metric-value">Operativo</div>
+                        <div class="metric-label">Estado General</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- MODAL PARA CREAR TICKET -->
+<div class="modal" id="ticketModal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 id="modalTitle">Crear Nuevo Incidente</h2>
+            <button class="modal-close" id="closeModal" aria-label="Cerrar modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <form id="ticketForm" class="ticket-form">
+            <div class="form-group">
+                <label for="ticketTitle">Título del Incidente *</label>
+                <input type="text" id="ticketTitle" name="title" required placeholder="Ej: Error en Compute Engine">
+            </div>
+
+            <div class="form-group">
+                <label for="ticketService">Servicio Afectado *</label>
+                <select id="ticketService" name="service" required>
+                    <option value="">Seleccione un servicio</option>
+                    <option value="compute">Compute Engine</option>
+                    <option value="kubernetes">Kubernetes Engine</option>
+                    <option value="sql">Cloud SQL</option>
+                    <option value="storage">Cloud Storage</option>
+                    <option value="iam">IAM – Identity & Access</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="ticketPriority">Prioridad *</label>
+                <select id="ticketPriority" name="priority" required>
+                    <option value="">Seleccione prioridad</option>
+                    <option value="p1">P1 - Crítico</option>
+                    <option value="p2">P2 - Alto</option>
+                    <option value="p3">P3 - Medio</option>
+                    <option value="p4">P4 - Bajo</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="ticketDescription">Descripción *</label>
+                <textarea id="ticketDescription" name="description" required rows="5" placeholder="Describa el problema en detalle..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="ticketEmail">Email de Contacto *</label>
+                <input type="email" id="ticketEmail" name="email" required placeholder="tu.email@ejemplo.com">
+            </div>
+
+            <div class="form-actions">
+                <button type="button" class="btn btn-secondary" id="cancelTicket">Cancelar</button>
+                <button type="submit" class="btn btn-primary">Crear Incidente</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- CONTENEDOR DE NOTIFICACIONES TOAST -->
+<div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+<!-- JavaScript externo -->
+<script src="js/app-simple.js"></script>
+
+</body>
+</html>

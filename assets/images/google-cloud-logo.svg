@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <!-- Google Cloud Logo -->
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4285f4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34a853;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Cloud shape -->
+  <path fill="url(#blueGrad)" d="M30,25 Q25,15 35,15 Q40,10 45,15 Q55,15 50,25 Q55,35 45,35 Q40,40 35,35 Q25,35 30,25 Z"/>
+
+  <!-- Text -->
+  <text x="65" y="28" font-family="'Google Sans', Arial, sans-serif" font-size="18" font-weight="500" fill="#5f6368">Google</text>
+  <text x="65" y="45" font-family="'Google Sans', Arial, sans-serif" font-size="18" font-weight="500" fill="#5f6368">Cloud</text>
+</svg>

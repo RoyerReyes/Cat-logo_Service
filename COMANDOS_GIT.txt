@@ -1,0 +1,155 @@
+═══════════════════════════════════════════════════════════════
+    📝 COMANDOS PARA SUBIR LOS CAMBIOS A GITHUB
+═══════════════════════════════════════════════════════════════
+
+✅ He corregido TODAS las rutas en tu proyecto para que funcionen
+   perfectamente en GitHub Pages.
+
+Ahora necesitas ejecutar estos comandos en la terminal:
+
+═══════════════════════════════════════════════════════════════
+
+PASO 1: Abre la terminal en la carpeta del proyecto
+────────────────────────────────────────────────────────────────
+1. Abre la carpeta "web calidad" en el explorador de archivos
+2. Click derecho en un espacio vacío
+3. Selecciona "Git Bash Here" o "Abrir en Terminal"
+
+
+PASO 2: Ejecuta estos comandos (uno por uno)
+────────────────────────────────────────────────────────────────
+
+# 1. Ver qué archivos cambiaron
+git status
+
+# 2. Agregar TODOS los archivos modificados
+git add .
+
+# 3. Hacer commit con mensaje descriptivo
+git commit -m "Corregir rutas para GitHub Pages - Agregar ./ a todos los paths"
+
+# 4. Subir los cambios a GitHub
+git push origin main
+
+# (Si tu rama principal es master en vez de main, usa:)
+# git push origin master
+
+
+PASO 3: Espera y verifica
+────────────────────────────────────────────────────────────────
+1. Espera 2-3 minutos para que GitHub Pages se actualice
+2. Ve a tu sitio de GitHub Pages
+3. Presiona Ctrl + Shift + R (para limpiar caché)
+4. ¡Ahora debería funcionar!
+
+
+═══════════════════════════════════════════════════════════════
+    🔍 VERIFICACIÓN: ¿Qué se corrigió?
+═══════════════════════════════════════════════════════════════
+
+✅ index.html:
+   - CSS:      href="css/styles.css"  →  href="./css/styles.css"
+   - JS:       src="js/app-simple.js" →  src="./js/app-simple.js"
+   - Logo:     src="assets/images..."  →  src="./assets/images..."
+   - Iconos:   src="assets/icons..."  →  src="./assets/icons..."
+
+✅ js/app-simple.js:
+   - Todos los iconos ahora usan "./assets/icons/..."
+
+✅ Creados archivos de ayuda:
+   - SOLUCION_GITHUB_PAGES.md (guía completa de troubleshooting)
+   - COMANDOS_GIT.txt (este archivo)
+
+
+═══════════════════════════════════════════════════════════════
+    ⚡ COPIA Y PEGA RÁPIDO
+═══════════════════════════════════════════════════════════════
+
+Si quieres hacerlo todo de una vez, copia y pega esto:
+
+git add . && git commit -m "Corregir rutas para GitHub Pages" && git push origin main
+
+
+═══════════════════════════════════════════════════════════════
+    🆘 SI TIENES PROBLEMAS
+═══════════════════════════════════════════════════════════════
+
+Error: "fatal: not a git repository"
+─────────────────────────────────────────
+→ Significa que no estás en la carpeta correcta
+→ Asegúrate de estar en "web calidad" donde está el .git
+
+
+Error: "Permission denied"
+─────────────────────────────────────────
+→ Necesitas autenticarte con GitHub
+→ Ejecuta: git config --global user.name "TuNombre"
+→ Ejecuta: git config --global user.email "tu@email.com"
+
+
+Error: "rejected - failed to push"
+─────────────────────────────────────────
+→ Primero descarga cambios del servidor
+→ Ejecuta: git pull origin main
+→ Luego vuelve a hacer: git push origin main
+
+
+Error: "nothing to commit"
+─────────────────────────────────────────
+→ Esto significa que ya está todo subido
+→ Simplemente espera 2-3 minutos y recarga tu sitio
+
+
+═══════════════════════════════════════════════════════════════
+    📱 DESPUÉS DE SUBIR LOS CAMBIOS
+═══════════════════════════════════════════════════════════════
+
+1. Ve a tu repositorio en GitHub.com
+2. Click en "Settings"
+3. Busca "Pages" en el menú izquierdo
+4. Verifica que diga: "Your site is published at..."
+5. Click en el link
+6. Presiona Ctrl + Shift + R para limpiar caché
+7. ¡Deberías ver todo funcionando con estilos!
+
+
+═══════════════════════════════════════════════════════════════
+    ✅ CHECKLIST POST-SUBIDA
+═══════════════════════════════════════════════════════════════
+
+Después de subir los cambios y esperar 2-3 minutos:
+
+□ ¿El sitio carga con tema oscuro? → CSS funcionando ✅
+□ ¿Ves el logo de Google Cloud? → Imágenes funcionando ✅
+□ ¿Los iconos en el menú se ven? → Assets funcionando ✅
+□ ¿Los botones tienen color? → JavaScript funcionando ✅
+□ ¿No hay errores en consola (F12)? → Todo bien ✅
+
+
+═══════════════════════════════════════════════════════════════
+    💡 TIPS FINALES
+═══════════════════════════════════════════════════════════════
+
+1. Siempre espera 2-3 minutos después de hacer push
+2. Usa Ctrl + Shift + R para recargar sin caché
+3. Si algo no funciona, revisa SOLUCION_GITHUB_PAGES.md
+4. Los errores se ven en la consola del navegador (F12)
+5. Verifica que TODOS los archivos estén en GitHub.com
+
+
+═══════════════════════════════════════════════════════════════
+    🎉 ¡YA ESTÁ!
+═══════════════════════════════════════════════════════════════
+
+Con estos cambios, tu proyecto debería funcionar perfectamente
+en GitHub Pages. Solo ejecuta los comandos de arriba y espera
+unos minutos.
+
+Si después de esto aún no funciona, compárteme:
+1. La URL de tu repositorio de GitHub
+2. La URL de GitHub Pages donde está publicado
+3. Los errores que aparecen en la consola (F12)
+
+¡Mucha suerte! 🚀
+
+═══════════════════════════════════════════════════════════════
